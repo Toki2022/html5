@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+</head>
+
+<body>
+    <!-- 
+        使用 a 标签 创建超链接 
+
+        超链接是行内元素  可以嵌套除他自身外的任何元素
+        href  指定跳转目标路径
+                    外部
+                    内部地址(两个页面在同一目录下)  当需要跳转服务器或项目内部路径时，使用相对路径
+                        相对路径使用.或 ..开头
+                        ./当前文件所在目录-----HTML5  省略则默认填写./  
+                        ../ 当前文件所在目录的上一级 
+    -->
+
+    <a>a</a>
+    <br>
+    <a>f</a>
+    <br>
+    <a href="https://www.baidu.com">百度</a>
+    <a href="text7.html">text7</a> = <a href="./text7.html">text7</a>
+    <br><br>
+    <!-- 
+    超链接其他用法
+        target属性  指定超链接打开位置
+                _self  默认值 在当前页面打开超链接
+                _blank 在一个新页面中打开超链接
+    -->
+    <a href="text8.html" target="_blank">text8</a>
+</body>
+
+</html>
+
