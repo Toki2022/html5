@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音视频播放</title>
+</head>
+<body>
+    <!-- 
+        audio   向页面中引入外部音频文件
+                    音视频文件引入时，默认情况下不允许用户自己播放停止
+        属性
+                    controls    是否允许用户控制播放
+                    autoplay   文件是否自动播放   大部分浏览器不支持
+                    ...
+     -->
+     <audio src="./source/obj_wo3DlMOGwrbDjj7DisKw_12463434143_b3f6_1a18_10ee_ee15ca92e5814b669675135522eba2af.mp3" controls autoplay></audio>
+
+     <!-- 
+            除了通过src指定外部文件路径外，还可通过source指定    
+      -->
+    
+    <audio controls>
+        对不起，您的浏览器不支持该音频，请升级浏览器
+        <source src = "./source/obj_wo3DlMOGwrbDjj7DisKw_12463434143_b3f6_1a18_10ee_ee15ca92e5814b669675135522eba2af.mp3">
+        <source src = "./xxx">  
+        <embed src="./source/obj_wo3DlMOGwrbDjj7DisKw_12463434143_b3f6_1a18_10ee_ee15ca92e5814b669675135522eba2af.mp3" type="audio/mp3" width="100" height="50">
+    </audio>
+
+    <embed src="./source/obj_wo3DlMOGwrbDjj7DisKw_12463434143_b3f6_1a18_10ee_ee15ca92e5814b669675135522eba2af.mp3" type="audio/mp3" width="100" height="50">
+
+<!-- 
+    video标签   引入视频文件
+ -->
+
+ <video controls>
+     <source src = "./source/487667860-1-80.mp4">
+     <source src="./source/487667860-1-80.flv">
+     <embed src="./source/487667860-1-80.flv"  type="video/mp4" >
+ </video>
+
+ <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p00429lrmta" allowFullScreen="true" width="500" height="300"></iframe>
+
+</body>
+</html>
