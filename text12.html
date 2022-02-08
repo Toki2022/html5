@@ -9,6 +9,40 @@
 <body>
     <!-- 
         引入外部图片
+            使用img标签  img标签是一个自结束标签
+            本地图片、外部图片
+
+            src 指定外部图片路径
+            alt 图片描述  描述默认不显示，某些浏览器会在图片无法加载时显示
+                搜索引擎会根据alt中的内容识别图片  不写alt属性则不会被搜索引擎所收录
+
+                width  图片宽度   单位是像素
+                height 图片高度
+                        宽度和高度中如果修改一个，另一个会等比例改变
+
+            STAR  一般在pc端，不建议修改图片大小
+
+
+        图片的格式
+            jpeg（jpg
+                    ---支持颜色丰富，不支持透明效果，不支持动图，一般显示照片
+            gif
+                    ---支持颜色少，支持简单透明，支持动图
+            png
+                    ---支持颜色丰富，支持复杂透明，不支持动图，网页常用
+
+                webp
+                    ---谷歌推出，兼具优点，文件小    兼容性差
+                base64
+                    ---将图片使用base64编码，将图片转换为字符，通过字符引入图片编码
+                    一般图片需要与网页一起加载时使用
+
+            效果一样用小的，效果不同用效果好的
      -->
+     <img src="src=http___i0.hdslb.com_bfs_article_3dc20ea695fe77d59826a8bb55c73235bee05d8b.jpg&refer=http___i0.hdslb.png" >
+
+     <img width="500" src="https://hbimg.huabanimg.com/415ffb40ea1ec2fce06c228f2b1c7aadf953744a64c8-oNd8OM_fw658/format/webp" alt="网络图片">
+
+  
 </body>
 </html>
